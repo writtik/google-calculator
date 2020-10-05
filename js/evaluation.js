@@ -9,7 +9,6 @@ function priority(a) {
         return 0;
 }
 
-
 function operand(a) {
     if (a === "^" || a === "*" || a === "/" || a === "+" || a === "-" || a === "%" || a == "(" || a == ")" || a === "÷" || a === "×")
         return 0;
@@ -119,7 +118,8 @@ function evaluate(a) {
     let m = stack.pop();
     if (Number.isNaN(m) || typeof m == "undefined") {
         return "undefined";
-    } else {
+    } else 
+    {
         return m;
     }
 }
